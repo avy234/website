@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+    <style>
+        body {
+            background-image: url(wallpaper.jpg);
+            margin: 10;
+            padding: 10;
+            font-family: Arial, sans-serif;
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        h1 {
+            color: black;
+            font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            margin: 20px auto; /* Center the form horizontally */
+            width: 80%; /* Set a maximum width for the form */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .column {
+            width: 100%;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        .nav-container {
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-block;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+
+</header>
+<div class="topnav">
+    <div class="search-container">
+        <input type="text" placeholder="search" name="search">
+        <button type="submit">Submit</button>
+    </div>
+</div>
+<h1>Real Living Real Estate</h1>
+<nav>
+    <center>
+        <div class="nav-container">
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="page2.html">Floorplan</a></li>
+                <li><a href="page3.html">Application Form</a></li>
+            </ul>
+        </div>
+    </center>
+</nav>
+
+<form action="#" method="post" class="clearfix form-container">
+    <fieldset class="column">
+        <legend>Personal Information</legend>
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+        </div>
+        <div>
+            <label for="middle_name">Middle Name:</label>
+            <input type="text" id="middle_name" name="middle_name">
+        </div>
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+        </div>
+    </fieldset>
+    <fieldset class="column">
+        <legend>Age Information</legend>
+        <div>
+            <label for="date">Birthday:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+        </div>
+    </fieldset>
+    <fieldset class="column">
+        <legend>Gender and Work background</legend>
+        <div>
+            <label>Gender</label>
+            <input type="radio" id="lalaki" name="Gender">
+            <label for="lalaki">Male</label>
+            <input type="radio" id="babae" name="Gender">
+            <label for="babae">Female</label>
+        </div>
+        <div>
+            <label>Nationality</label>
+            <input type="radio" id="Filipino" name="Nationality">
+            <label for="Filipino">Filipino</label>
+            <input type="radio" id="Others" name="Nationality">
+            <label for="Others">Others</label>
+        </div>
+        <div>
+            <label for="employ">Occupation:</label>
+            <select name="employ" id="employ">
+                <option value="Employed">Employed</option>
+                <option value="Freelancing">Freelancing</option>
+                <option value="Student">Student</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div>
+            <label for="work_experience">Work Experience:</label>
+            <select name="work_experience" id="work_experience">
+                <option value="Full time job">Full time job</option>
+                <option value="Part time job">Part time job</option>
+                <option value="Student">Student</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Assistant">Assistant</option>
+                <option value="Contractual job">Contractual job</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset class="column">
+        <legend>Contact Information</legend>
+        <div>
+            <label for="country_code">Country Code:</label>
+            <input type="text" id="country_code" name="country_code">
+        </div>
+        <div>
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+        </div>
+        <div>
+            <label for="zip_number">Zip Number:</label>
+            <input type="text" id="zip_number" name="zip_number">
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+    </fieldset>
+    <fieldset class="column">
+        <legend>Create an Account</legend>
+        <div>
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username">
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="text" id="Password" name="Password">
+        </div>
+    </fieldset>
+    <fieldset class="column">
+        <legend>Feedback</legend>
+        <div>
+            <label for="Feedback">Give us Feedback about your Experience</label>
+            <textarea id="Feedback" name="Feedback" rows="10" cols="60"></textarea>
+        </div>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
+
+
